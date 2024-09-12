@@ -13,6 +13,7 @@ def initialize_agent_with_tools():
         tools=[shell_tool],
         llm=llm,
         agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION,
-        verbose=True
+        verbose=True,
+        handle_parsing_errors=True  # Enable handling of parsing errors
     )
     return agent

@@ -15,5 +15,5 @@ if __name__ == "__main__":
             print("Exiting the interactive shell...")
             break
 
-        # Run the command through the agent
+        # Run the command through the agent with validation and permission
         run_command(agent, command)
