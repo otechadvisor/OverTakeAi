@@ -3,8 +3,8 @@ from command_input import get_user_command
 from commands import run_command
 
 if __name__ == "__main__":
-    # Initialize the agent
-    agent = initialize_agent_with_tools()
+    # Initialize the agent executor
+    agent_executor = initialize_agent_with_tools()
 
     # Start the interactive shell
     while True:
@@ -16,4 +16,4 @@ if __name__ == "__main__":
             break
 
         # Run the command through the agent with validation and permission
-        run_command(agent, command)
+        run_command(agent_executor, command)
